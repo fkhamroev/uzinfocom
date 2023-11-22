@@ -13,7 +13,7 @@ export const News = () => {
       try {
         const result = await fetch(url);
         const json = await result.json();
-        setArticles(json.articles.slice(0, 4)); // Получаем первые 5 статей
+        setArticles(json.articles.slice(0, 4));
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -24,7 +24,7 @@ export const News = () => {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     const options = { year: "numeric", month: "long", day: "numeric" };
-    return date.toLocaleDateString("ru-RU", options); // Форматируем дату как нужно
+    return date.toLocaleDateString("ru-RU", options);
   };
 
   return (

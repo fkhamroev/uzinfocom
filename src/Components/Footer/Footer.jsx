@@ -3,9 +3,8 @@ import "./Footer.css";
 import logo from "../../Assets/img/UZINFOCOM_logo.png";
 
 export const Footer = () => {
-  const [activeLink, setActiveLink] = useState(0); // Состояние для хранения индекса активной ссылки
+  const [activeLink, setActiveLink] = useState(0); 
 
-  // Функция для установки активной ссылки
   const handleSetActive = (index) => {
     setActiveLink(index);
   };

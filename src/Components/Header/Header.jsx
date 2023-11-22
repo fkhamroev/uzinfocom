@@ -5,7 +5,7 @@ import { faEye, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Header = () => {
-  const [activeButton, setActiveButton] = useState("Ru"); // Устанавливаем начальную активную кнопку
+  const [activeButton, setActiveButton] = useState("Ru");
 
   const handleClick = (lang) => {
     setActiveButton(lang);

@@ -66,14 +66,14 @@
 .search-icon {
   position: absolute;
   top: 50%;
-  right: 10px; /* Расположите значок справа с нужным отступом */
+  right: 10px;
   transform: translateY(-50%);
   color: #888;
   pointer-events: none;
 }
 
 .header-icon {
-  margin-right: 35px; /* Регулируйте отступ между иконкой и кнопками */
+  margin-right: 35px;
   color: #323232;
   margin-left: 20px;
 }
@@ -88,7 +88,6 @@
   font-weight: 700;
 }
 
-/* Добавьте стили для активной кнопки, если это необходимо */
 .header-btn.active {
   background-color: #323232b9;
   color: white;

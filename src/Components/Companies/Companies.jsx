@@ -43,7 +43,7 @@ export const Companies = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true, // Отображение стрелок
+    arrows: true, 
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
@@ -55,8 +55,8 @@ export const Companies = () => {
             <div key={index} className="country-slide">
               <img
                 className="country-img"
-                src={country.flags?.png} // Обратите внимание на обращение к свойству flags
-                alt={country.name?.common} // Обратите внимание на обращение к свойству name
+                src={country.flags?.png} 
+                alt={country.name?.common} 
               />
               <p className="country-desc">{country.name?.common}</p>
             </div>
