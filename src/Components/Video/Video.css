@@ -1,34 +1,33 @@
-/* Video.css */
-
 .video-container {
   position: relative;
   width: 100%;
+  padding-top: 20px;
 }
 
-/* .video-heading {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
+.video-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  background: #00000036;
   z-index: 1;
-  color: #000;
-} */
-
-
+  pointer-events: all;
+}
 
 .play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
 }
 
 .video {
   width: 100%;
+  z-index: 2;
 }
 
-/* Стили для скрытия контролов видео */
 .video::-webkit-media-controls {
   display: none !important;
 }

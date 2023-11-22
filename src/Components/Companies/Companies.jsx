@@ -48,19 +48,21 @@ export const Companies = () => {
     nextArrow: <CustomNextArrow />,
   };
   return (
-    <div className="container">
-      <Slider ref={sliderRef} {...settings}>
-        {countries.slice(0, 9).map((country, index) => (
-          <div key={index} className="country-slide">
-            <img
-              className="country-img"
-              src={country.flags?.png} // Обратите внимание на обращение к свойству flags
-              alt={country.name?.common} // Обратите внимание на обращение к свойству name
-            />
-            <p className="country-desc">{country.name?.common}</p>
-          </div>
-        ))}
-      </Slider>
+    <div className="companies">
+      <div className="container">
+        <Slider ref={sliderRef} {...settings}>
+          {countries.slice(0, 9).map((country, index) => (
+            <div key={index} className="country-slide">
+              <img
+                className="country-img"
+                src={country.flags?.png} // Обратите внимание на обращение к свойству flags
+                alt={country.name?.common} // Обратите внимание на обращение к свойству name
+              />
+              <p className="country-desc">{country.name?.common}</p>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

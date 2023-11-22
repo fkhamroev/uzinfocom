@@ -1,0 +1,33 @@
+.first-tab,
+.second-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+.first-tab img {
+  width: 450px;
+}
+
+.firts-content {
+  font-size: 20px;
+  margin-left: 150px;
+}
+
+.first-extra {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+.first-extra p {
+  margin-right: 20px;
+}
+
+.div {
+  font-size: 40px;
+  font-weight: 700;
+}

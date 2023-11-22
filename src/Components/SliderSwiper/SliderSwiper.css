@@ -1,4 +1,3 @@
-/* Общий контейнер слайдера */
 .slider {
   position: relative;
   width: 100%;
@@ -6,17 +5,14 @@
   margin-top: 50px;
 }
 
-/* Контейнер элемента слайда */
 .slider-item {
   position: relative;
   height: 500px;
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-
 }
 
-/* Стиль изображений в слайде */
 .slider-item img {
   width: 100%;
   height: 100%;
@@ -48,7 +44,6 @@
   border-radius: 15px;
 }
 
-/* Стили контента внутри слайда */
 .slider-content {
   position: absolute;
   top: 50%;
@@ -59,7 +54,32 @@
   z-index: 1;
 }
 
-/* Стили стрелок слайдера */
+.slider-icons {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  font-size: 25px;
+  z-index: 2;
+  color: white;
+}
+
+.slider-icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  transition: 500ms;
+}
+
+.slider-icon:hover {
+  background: white;
+  color: black;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: white;
@@ -79,7 +99,6 @@
   font-size: 25px;
 }
 
-/* Стили индикаторов слайдера */
 .swiper-pagination-bullet {
   border: 1px solid #fff;
   background-color: transparent;

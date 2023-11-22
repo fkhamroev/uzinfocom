@@ -3,7 +3,7 @@ import "./News.css";
 import slider2 from "../../Assets/img/slider2.jpg";
 
 const url =
-  "https://newsapi.org/v2/everything?q=tesla&from=2023-10-21&sortBy=publishedAt&apiKey=c2156c5ee6224a8c8d7cb95f72db4da3";
+  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c2156c5ee6224a8c8d7cb95f72db4da3";
 
 export const News = () => {
   const [articles, setArticles] = useState([]);
@@ -76,8 +76,9 @@ export const News = () => {
             )
         )}
       </div>
-      <a href="#" className="news-href">Все новости</a>
+      <a href="#" className="news-href">
+        Все новости
+      </a>
     </div>
-
   );
 };

@@ -1,42 +1,31 @@
 .events {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
+}
+
+.events-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.events-tit {
-  color: #323232;
-  font-size: 35px;
-  font-weight: 700;
-  margin-top: 80px;
-}
-
-.events-hr {
-  width: 7%;
-  height: 3px;
-  border: none;
-  background: #323232;
-  border-radius: 1%;
-  margin-bottom: 50px;
-}
-
 .events-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 4px 4px 10px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 2px 8px 0px rgba(34, 60, 80, 0.2);
   height: 350px;
-  width: 35%;
-  padding-bottom: 50px;
-  /* z-index: 1; */
+  overflow: hidden;
+  position: relative;
+}
+
+.events-img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
 }
 
 .events-title {
   font-size: 25px;
   color: #323232;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Указываем количество строк, которые хотим отобразить */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin: 20px 0;
@@ -44,6 +33,9 @@
 }
 
 .events-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
   background: #17171722;
   color: #323232;
   max-width: 110px;
@@ -52,13 +44,6 @@
   text-align: center;
   padding: 5px;
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  right: 10px;
+  bottom: 20px;
 }
-
-.events-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
