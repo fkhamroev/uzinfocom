@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uzinfocom/static/css/main.5cd0832f.css",
-    "main.js": "/uzinfocom/static/js/main.2d5393ba.js",
+    "main.css": "/uzinfocom/static/css/main.a39c59ce.css",
+    "main.js": "/uzinfocom/static/js/main.1331065e.js",
     "static/js/787.d4aba7ab.chunk.js": "/uzinfocom/static/js/787.d4aba7ab.chunk.js",
     "static/media/1.mp4": "/uzinfocom/static/media/1.a8657ed4bba044d7ea9c.mp4",
     "static/media/gallery2.jpg": "/uzinfocom/static/media/gallery2.53410f05cad5c8de9f46.jpg",
@@ -9,6 +9,7 @@
     "static/media/slider1.jpg": "/uzinfocom/static/media/slider1.9d6f16aa98deda6d9b80.jpg",
     "static/media/gallery3.jpg": "/uzinfocom/static/media/gallery3.61ac0f5109fdbfea087f.jpg",
     "static/media/gallery1.jpg": "/uzinfocom/static/media/gallery1.5b64aa7ecec9b19ed2b5.jpg",
+    "static/media/uz.svg": "/uzinfocom/static/media/uz.342f0b77647c9ecf1abe00c4be70f8b0.svg",
     "static/media/gallery4.jpg": "/uzinfocom/static/media/gallery4.f55efda933a11fbb0988.jpg",
     "static/media/UZINFOCOM_logo.png": "/uzinfocom/static/media/UZINFOCOM_logo.c700395219b95da43bf8.png",
     "static/media/logo.png": "/uzinfocom/static/media/logo.b9c52029f07eb5e536bb.png",
@@ -17,12 +18,12 @@
     "static/media/slick.ttf": "/uzinfocom/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/uzinfocom/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/uzinfocom/index.html",
-    "main.5cd0832f.css.map": "/uzinfocom/static/css/main.5cd0832f.css.map",
-    "main.2d5393ba.js.map": "/uzinfocom/static/js/main.2d5393ba.js.map",
+    "main.a39c59ce.css.map": "/uzinfocom/static/css/main.a39c59ce.css.map",
+    "main.1331065e.js.map": "/uzinfocom/static/js/main.1331065e.js.map",
     "787.d4aba7ab.chunk.js.map": "/uzinfocom/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cd0832f.css",
-    "static/js/main.2d5393ba.js"
+    "static/css/main.a39c59ce.css",
+    "static/js/main.1331065e.js"
   ]
 }
