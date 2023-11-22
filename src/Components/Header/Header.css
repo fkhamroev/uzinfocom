@@ -1,0 +1,95 @@
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header-img {
+  height: 60px;
+  width: 50px;
+}
+
+.header-title {
+  font-size: 18px;
+  margin-left: 20px;
+  border-left: 2px solid #000;
+  padding-left: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 30px 8px 10px; /* Задайте отступы с учётом значка */
+  border-radius: 15px;
+  border: 1px solid #323232;
+  margin-right: 10px;
+}
+
+.search-input::placeholder {
+  font-weight: 700;
+}
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Расположите значок справа с нужным отступом */
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.header-icon {
+  margin-right: 35px; /* Регулируйте отступ между иконкой и кнопками */
+  color: #323232;
+  margin-left: 20px;
+}
+
+.header-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  color: #323232;
+  font-weight: 700;
+}
+
+/* Добавьте стили для активной кнопки, если это необходимо */
+.header-btn.active {
+  background-color: #323232b9;
+  color: white;
+}

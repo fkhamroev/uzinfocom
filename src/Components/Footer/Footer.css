@@ -1,0 +1,129 @@
+.footer {
+  background-image: url(../../Assets/img/slider2.jpg);
+  position: relative;
+  padding: 80px 0;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer::before {
+  content: "";
+  background: rgba(2, 2, 215, 0.8);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-subtitle {
+  font-size: 25px;
+}
+
+.footer-title {
+  font-size: 30px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  position: relative;
+}
+
+.footer-link {
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.footer-menu::before {
+  content: "";
+  background: white;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 30px; /* Расположение иконки относительно активного пункта */
+  left: 50%; /* Положение иконки по горизонтали */
+  transform: translateX(-50%); /* Центрирование иконки по горизонтали */
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white; /* Стилизация треугольника вниз */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.content-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-extra {
+  font-size: 20px;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-extra img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.footer-content p:nth-of-type(2) {
+    margin-top: 35px;
+}
+
+.content-links li {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.content-links div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.content-links div:nth-of-type(2) a {
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    max-width: 350px;
+    width: 100%;
+}
+
+.footer-extra p:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+}

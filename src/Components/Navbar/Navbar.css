@@ -1,0 +1,21 @@
+.navbar {
+    margin-top: 50px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-link {
+    color: #444444;
+    font-weight: 700;
+    transition: all 1s ease;
+    font-size: 17px;
+    /* text-transform: uppercase; */
+}
+
+.menu-link:hover {
+    color: black;
+}

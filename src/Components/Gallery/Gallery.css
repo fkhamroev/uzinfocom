@@ -1,0 +1,30 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.gallery-photo {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-slider {
+  position: relative;
+}
+
+
+.gallery-img {
+  width: 50%;
+  height: 250px;
+  border: 1px solid white;
+}
+
+.gallery-video {
+  width: 100%;
+}
+
+.gallery-slider {
+  width: 50%;
+}

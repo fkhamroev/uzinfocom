@@ -1,0 +1,151 @@
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./HeaderSlider.css";
+import slider1 from "../../Assets/img/slider1.jpg";
+
+export const HeaderSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  return (
+    <div className="header-slider">
+      <div className="header-slider-overlay"></div>
+      <Slider {...settings}>
+        <div className="slider-item">
+          {/* Контент для слайда 1 */}
+          <img src={slider1} alt="Slide 1" />
+          <div className="slider-content">
+            <h2 className="slider-tit">Национальные</h2>
+            <h1 className="slider-title">Электрические сети</h1>
+            <h1 className="slider-title">Узбекистана</h1>
+            <a href="#" className="slider-link">
+              Подробнее{" "}
+            </a>
+          </div>
+        </div>
+        <div className="slider-item">
+          {/* Контент для слайда 1 */}
+          <img src={slider1} alt="Slide 1" />
+          <div className="slider-content">
+            <h2 className="slider-tit">Национальные</h2>
+            <h1 className="slider-title">Электрические сети</h1>
+            <h1 className="slider-title">Узбекистана</h1>
+            <a href="#" className="slider-link">
+              Подробнее{" "}
+            </a>
+          </div>
+        </div>
+      </Slider>
+    </div>
+  );
+};
+
+
+-------------------------------
+/* HeaderSlider.css */
+
+.header-slider {
+  margin-top: 35px;
+  position: relative;
+}
+
+.header-slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 4, 118, 0.5); /* Цвет и прозрачность фона */
+  z-index: 1;
+}
+
+.slider-item {
+  position: relative;
+  height: 100%; /* Займите 100% высоты слайдера */
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* чтобы изображения не искажались */
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.slider-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slider-content p {
+  font-size: 16px;
+}
+
+/* Стили для контроллеров и индикаторов */
+.slick-prev,
+.slick-next {
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "\2190"; /* Символ стрелки влево и вправо */
+}
+
+.slick-next:before {
+  content: "\2192";
+}
+
+.slick-dots li button {
+  font-size: 0; /* Скрыть текст */
+}
+
+/* Показывать только точки в индикаторах */
+.slick-dots li button:before {
+  content: "\2022"; /* Символ точки */
+  font-size: 12px; /* Размер точки */
+  color: #fff; /* Цвет точки */
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+}
+
+--------------------------------------
+c2156c5ee6224a8c8d7cb95f72db4da3 
+news api key

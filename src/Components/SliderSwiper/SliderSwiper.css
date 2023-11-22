@@ -1,0 +1,102 @@
+/* Общий контейнер слайдера */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+/* Контейнер элемента слайда */
+.slider-item {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+/* Стиль изображений в слайде */
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-tit {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.slider-title {
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.slider-link {
+  color: white;
+  border: 2px solid white;
+  max-width: 110px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+/* Стили контента внутри слайда */
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+/* Стили стрелок слайдера */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background-color: #88888880;
+  width: 50px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  font-size: 25px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  font-size: 25px;
+}
+
+/* Стили индикаторов слайдера */
+.swiper-pagination-bullet {
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.slider-item[data-overlay="true"]::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(2, 2, 215, 0.6);
+  position: absolute;
+}
